@@ -2,7 +2,7 @@ const quizData = [
     {
       question: 'The Slowest Animal In The World is',
       options: ['Sloth' , 'Snail', 'Owl' , 'none of the above'],
-      answer: 'Sloth',
+      answer: 'Slo',
     },
     {
       question: 'What is the fastest land animal??',
