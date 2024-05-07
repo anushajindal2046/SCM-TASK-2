@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0; /* Remove default margin */
+            background-image: url('images/purple.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex; /* Align items vertically */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            color: gold;
+        }
+
+        h1 {
+            font-size: 100px;
+            position: absolute;
+            z-index: 1; /* Ensure the text is above the video */
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover; /* Ensure video covers the entire container */
+        }
+    </style>
+</head>
+<body>
+    <h1>2 days !</h1>
+    <video autoplay muted loop>
+        <source src="streak.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

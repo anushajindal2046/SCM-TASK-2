@@ -1,0 +1,140 @@
+body{
+    min-height: 100vh;
+    background-image: url(images/scie.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: cursive;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    margin-left:50px;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    margin-left:50px;
+    margin-top: -35px;
+}
+.level{
+    float:right;
+    margin-top:-150px;
+    margin-right:80px;
+
+}
+.leveltext{
+    float:right;
+    color:white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right:50px;
+    margin-top:-140px;
+    cursor: pointer;
+}
+.box{
+    background-color: white;
+    height:180px;
+    width:350px;
+    padding:5px 5px 5px 5px;
+    padding-left: 30px;
+    margin:20px 50px 20px 50px;
+    border-radius: 20px;
+    float:left;
+}
+.box:hover{
+    transform:scale(1.1);
+    transition:0.5s;
+}
+h3{
+    color:rgb(69, 2, 69);
+    font-size: 25px;
+}
+p{
+    color:rgb(174, 39, 174);
+    font-weight: bold;
+}
+.coin{
+    float:right;
+    margin-right:50px;
+    margin-top:-100px;
+}
+.bar{
+    margin-top:-20px;
+}
+.quizweek{
+    float:right;
+    margin-right:25px;
+    margin-top:-80px;
+}
+.score{
+    height: 50px;
+    float:left;
+    margin-right:20px;
+    margin-top:-10px;
+}
+.score_nav{
+    float:right;
+    margin-right:30px;
+    margin-top:-70px;
+    height:100px;
+}
+button{
+    cursor: pointer;
+    color: rgb(193, 30, 193);
+    border: 1px solid  rgb(193, 30, 193);
+    width:5px;
+    border-radius: 6px;
+    font-weight: 600;
+    width: 80px;
+    padding: 5px 0;
+    background-color: white;
+    transition: 0.4s;
+}
+button:hover {
+    color:white;
+    background-color: rgb(193, 30, 193);
+}
+span{
+    font-size: 50px;
+    font-weight: bolder;
+    color:white;
+    margin:10px 10px 10px 50px;
+}
+#streakBox span{
+    color:black;
+    font-size:30px;
+    font-weight:bolder;
+    margin-left:10px;
+}
+.all{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 300;
+    float:right;
+    margin-right:50px;
+    margin-top:40px;
+}
+.all:hover{
+    color:rgb(69, 2, 69);
+    transition:0.4s;
+}
+.box_cat{
+    background-color: white;
+    height:180px;
+    width:200px;
+    padding:10px 10x 10px 10px;
+    padding-left:70px;
+    padding-top:30px;
+    margin:20px 50px 20px 50px;
+    border-radius: 20px;
+    float:left;
+}
+.box_cat p{
+    margin-left:35px;
+}
+.box_cat:hover{
+    transform:scale(1.1);
+    transition:0.5s;
+}

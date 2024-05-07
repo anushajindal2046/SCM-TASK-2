@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-complatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+    <header>
+        <h2>Welcome back,</h2>
+        <h1>Let's play!</h1>
+        <a class="level" href="#"><img src="images/logofinal.jpg" height="140px" width="160px"></a>
+    </header>
+    <div class="container">
+        <div class="box" id="streakBox">
+            <h3><span id="streakDays">5</span> day streak !</h3>
+            <p>10 daily points...</p>
+            <img class="coin" src="images/coinlogo.png" width="90px" height="90px">
+            <a href="streak.html"><button>See Now</button>
+        </div></a>
+        <div class="box">
+            <h3>Learner's Corner !</h3>
+            <p>Never stop learning because <br> life never stops teaching...</br></p>
+            <a href="KNOWLEDGE2.HTML"><button>Learn</button></a>
+            <img class="quizweek" src="images/knowledge.png" width="100px" height="100px">
+        </div>
+        <div class="box">
+            <h3>About Us !</h3>
+            <img class="score" src="images/info.png" height="40px" width ="40px">
+            <p>Come and know <br>about us ...</br></p>
+            <img class="score_nav" src="images/group.png" width="100px" height="70px">
+            <a href="about.html"><button>About Us</button>
+        </div></a>
+    </div>
+    <span>Categories</span>
+    <a class="all" href="cat.html">See all</a><br>
+    <a href="books.html"><div class="box_cat">
+        <img src="images/stack-of-books.png"width="120px" height="120px">
+        <p>Books</p>
+    </div></a>
+    <a href="sports.html"><div class="box_cat">
+        <img src="images/sports.png" width="120px" height="120px">
+        <p>Sports</p>
+    </div></a>
+    <a href="movies.html"><div class="box_cat">
+        <img src="images/movie-clapper-open.png" width="120px" height="120px">
+        <p>Movies</p>
+    </div></a>
+    <a href="travel.html"><div class="box_cat">
+        <img src="images/travel-itinerary.png" width="120px" height="120px">
+        <p>Travel</p>
+    </div></a>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let streakDays = parseInt(localStorage.getItem('streakDays')) || 1;
+
+            document.getElementById('streakDays').textContent = streakDays;
+
+            setInterval(function() {
+                streakDays++;
+
+                document.getElementById('streakDays').textContent = streakDays;
+
+                localStorage.setItem('streakDays', streakDays);
+            }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
+        });
+    </script>
+</body>
+</html>
