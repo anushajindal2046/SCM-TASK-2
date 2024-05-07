@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  background-color:grey;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-image:url('images/scie.avif');
+  color:white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:purple;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.img{
+    height:550px;
+    width:400px;
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We created a quiz application, Quizzard</p>
+  <p>Quizzard provides you a fun and interactive platform to gain and test your knowledge in varoius domains.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/anter.jpg" alt="Anterpreet" class="img">
+      <div class="container">
+        <h2>Anterpreet Kaur</h2>
+        <p>I'm Anterpreet Kaur from CSE department G-18 A.</p>
+        <p>anterpreet1614.be23@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/anuj.jpg" alt="Anuj" class="img">
+      <div class="container">
+        <h2>Anuj Maurya</h2>
+        <p>I'm Anuj Mauraya from CSE department G-18 A.</p>
+        <p>anuj1615.be23@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/anusha.jpg" alt="Anusha" class="img">
+      <div class="container">
+        <h2>Anusha Jindal</h2>
+        <p>I'm Anusha Jindal from CSE department G-18 A.</p>
+        <p>anusha1616.be23@chitkara.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
