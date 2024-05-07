@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+body {
+    margin:0;
+    background-image: url(pexels-pixabay-417173.jpg);
+
+}
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right:60px;
+}
+
+.navbar a:hover {
+  font-size: xx-large;
+  transition-duration: 0.5s;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(images/purple.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: gold;
+    font-family:cursive;
+    font-weight: bolder;
+    text-align: left;
+    margin-right:70px;
+    margin-left:200px;
+    margin-top:200px;
+}
+p{
+    color: white;
+    text-align: left;
+    margin-right:70px;
+    margin-top:-10px;
+    font-size: 20px;
+    font-family: cursive;
+    margin-left:200px;
+    margin-right: 600px;
+}
+.bg_img{
+    background-image: url(images/treasure.png);
+    height:500px;
+    width:500px;
+    margin-left: 250px;
+    float:right;
+    margin-top:-270px;
+    margin-right:100px;
+}
+button{
+    cursor: pointer;
+    color: rgb(193, 30, 193);
+    border: 0;
+    width:5px;
+    border-radius: 6px;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0 5px;
+    height: 50px;
+    width: 200px;
+    margin-left:200px;
+    margin-top:auto;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    background-color: white;
+    transition: 0.4s;
+}
+button:hover {
+    color: rgb(193, 30, 193);
+    background-color:gold;
+    height:70px;
+    width:250px;
+    font-size: 32px;
+  }
+
+.ft h1{
+    color: gold;
+    font-family:cursive;
+    margin-left:550px;
+    margin-top:300px;
+}
+.ft-p1{
+  font-size:small;
+  margin-top: 20px;
+  margin-left:640px;
+}
+.ft-p2{
+  margin-top:20px;
+  margin-left:300px;
+}
+
+.rvw h1{
+    color: gold;
+    font-family:cursive;
+    text-align: left;
+    margin-right:70px;
+    margin-left:200px;
+    margin-top:300px;
+}
+.box{
+    background-color:rgb(205, 156, 205);
+    height:200px;
+    width:350px;
+    padding:5px 5px 5px 5px;
+    padding-left: 30px;
+    margin:20px 50px 20px 50px;
+    border-radius: 20px;
+    float:left;
+}
+.box:hover{
+    transform:scale(1.1);
+    transition:0.5s;
+    box-shadow: #f2f2f2;
+}
+.review{
+  margin-bottom:100px;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+        <div class="container-fluid">
+                <a class="navbar-brand" href="#">Quizzard</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ms-auto mb-2 mb-lg-0 fs-5 text-centre">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Key Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Press</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+    <h1>Welcome to Quizzard</h1>
+    <p>New and exciting games from Quizzard Industries</p><br>
+    <p>Quizzard is a game app that brings fun and excitement to your fingertips. Our games are designed to challenge your mind and take you on amazing adventures. Join us now and let's have some fun together.</p>
+    <a class="start" href="login.html"><button>Start Playing</button></a>
+    <div class="bg_img"></div>
+    
+    <section class="ft">
+        <h1>Key Features</h1>
+        <p class="ft-p1">Version 1.0 (2023)</p>
+        <p class="ft-p2">Enjoy a variety of games that will challenge your mind and keep you entertained for hours.<br>
+            Level up and unlock exciting new features and challenges.<br>
+            Explore new worlds and battle fierce creatures to become the ultimate champion.<br>
+            Our games are designed for all ages and skill levels, so everyone can join in on the fun.</p>
+    </section>
+     
+    <section class="review">
+        <h1 style="margin-left: 570px;">Player Reviews</h1>
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="R1-removebg-preview.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="R2-removebg-preview.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="R3-removebg-preview.png" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<body>    
+</html>

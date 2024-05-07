@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Quizzard Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+            background-image: url('images/smoke.jpg');
+            color: #fff;
+        }
+
+        #login-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #quizzard-logo {
+            font-size: 200px;
+            font-style:italics;
+  color: #ffd700;
+  text-align: center top;
+  margin-bottom:50px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+        }
+        @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+            to {
+              text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+
+            }
+}
+
+        .input-box {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff; /* White color */
+            color: #13294B; /* Text color on input boxes */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .input-box:focus {
+            background-color: #ddd; /* Highlight color on focus */
+        }
+
+        #login-button {
+            font-size: 20px;
+            color: #301934;
+            width: 73%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FFC000; /* Red button background color */
+            color: #000000; /* Button text color */
+            cursor: pointer;
+        }
+
+        #login-button:hover {
+            color:white;
+            background-color: #e60073;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-container">
+        <div id="quizzard-logo">Quizzard</div>
+        <form id="login-form" action="page.html" onsubmit="return validateLogin()">
+            <input type="text" class="input-box" placeholder="Username" id="Username" required>
+            <input type="password" class="input-box" placeholder="Password" id="Password" required>
+            <button type="submit" id="login-button" onclick = " validateLogin()">LOGIN</button>
+        </form>
+    </div>
+    <script>
+        function validateLogin(){
+            var usernameinput = document.getElementById("Username").value;
+            var passwordinput = document.getElementById("Password").value;
+            if( usernameinput== "abcd" && passwordinput== "1234"){
+                alert("login successfully")
+                // return true
+            }
+
+            else{
+                alert("invalide username and password. please try again");
+                return false
+            }
+        }
+    </script>
+</body>
+</html>
