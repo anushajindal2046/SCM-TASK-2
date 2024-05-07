@@ -2,7 +2,7 @@ const quizData = [
     {
       question: 'The Slowest Animal In The World is',
       options: ['Sloth' , 'Snail', 'Owl' , 'none of the above'],
-      answer: 'Slo',
+      answer: 'Sloth',
     },
     {
       question: 'What is the fastest land animal??',
@@ -66,10 +66,10 @@ const quizData = [
     },
   ];
 
-  const quizContainer = document.getElementById(' Quiz');
-  const resultContainer = document.getElementById('Result');
-  const submitButton = document.getElementById('Submit');
-  const retryButton = document.getElementById('Retry');
+  const quizContainer = document.getElementById('quiz');
+  const resultContainer = document.getElementById('result');
+  const submitButton = document.getElementById('submit');
+  const retryButton = document.getElementById('retry');
   const showAnswerButton = document.getElementById('showAnswer');
 
   let currentQuestion = 0;
