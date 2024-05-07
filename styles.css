@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('images/scie.jpg');
+  background-size:1800px;
+  background-repeat: no-repeat;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: top;
+  width: 450px;
+  padding-top:10px;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color:white;
+  margin-top:-70px;
+}
+
+h1 {
+  text-align:top;
+  color:#FFF;
+  font-size:120px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+        }
+        @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 1px #000, 0 0 5px #800080, 0 0 10px #000, 0 0 20px #800080, 0 0 30px #000, 0 0 40px #800080, 0 0 50px #000;
+            }
+            to {
+              text-shadow: 0 0 1px #800080, 0 0 20px #000, 0 0 30px #800080, 0 0 40px #000, 0 0 50px #800080, 0 0 60px #000, 0 0 100px #800080;
+
+            }
+}
+
+
+.question {
+  align:top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size:30px;
+  color:#fff;
+}
+
+.options {
+  margin-bottom: +20px;
+  font-size:30px;
+  color:#fff;
+}
+
+.option {
+  display: block;
+  margin-bottom: 10px;
+  color:#FFFFFF;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  color: #fff;
+  border: 1px solid  rgb(95, 25, 95);
+  cursor: pointer;
+  font-size: 16px;
+  color:black;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color:#FFD700;
+  font-color:#fff;
+}
+
+.result {
+  text-align: top;
+  margin-top: 70px;
+  font-weight: bold;
+  font-size:15px;
+  color:#fff;
+}
+
+.hide{
+  display: none;
+}
+.h{
+  color:#ffffff;
+  font-size:500%;
+}

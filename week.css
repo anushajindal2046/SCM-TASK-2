@@ -1,0 +1,63 @@
+body{
+    min-height: 100vh;
+    background-image: url(images/layers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: cursive;
+}
+img{
+    transform:scaleX(-1);
+    margin:30px 30px 30px 30px;
+}
+h1{
+    color:rgb(69, 2, 69);
+    font-size: 40px;
+    text-align: center;
+    margin-top:-60px;
+}
+.box{
+    background-color: white;
+    height:300px;
+    width:300px;
+    margin-right:45px;
+    margin-left:45px;
+    padding-left:110px;
+    margin-bottom:90px;
+    border-radius: 20px;
+    float:left;
+}
+p{
+    color:rgb(174, 39, 174);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left:40px;
+    margin-top:50px;
+    margin-bottom:30px;
+}
+h2{
+    color: white;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    color: rgb(193, 30, 193);
+    border: 0;
+    width:5px;
+    border-radius: 6px;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0 5px;
+    height: 50px;
+    width: 200px;
+    margin-left:630px;
+    margin-top:50px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    background-color: white;
+    transition: 0.4s;
+}
+button:hover {
+    color: white;
+    background-color:rgb(193, 30, 193);  
+}
